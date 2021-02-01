@@ -8,6 +8,118 @@ img{
 .font-div{
 	width: 30%;
 }
+
+.nameSection{
+	animation: moveInRight 1s ease-out;
+}
+
+.btn-white{
+	background-color: rgb(138, 56, 158);
+	color: black;
+	border: 2px solid white;
+	cursor: pointer;
+	border-radius: 12px;
+	animation: moveInDown 1s ease-out;
+}
+
+.btn:link,
+.btn:visited{
+	text-transform: uppercase;
+	text-decoration: none;
+}
+.btn:hover{
+	transform: translateY(-3px);
+	color: greenyellow;
+	background-color: rgb(68, 67, 67);
+}
+
+.nameAnimation{
+	
+	animation: moveInLeft 1s ease-out;
+	
+}
+
+.uppr{
+	animation: moveInUp 1s ease-out;
+	
+}
+
+.bttm{
+	animation: moveInDown 1s ease-out;
+	
+}
+
+.profileIMG{
+	border-radius: 25px;
+}
+
+/*////---------------------ANIMATION SECTION----------------------------////*/
+
+@keyframes moveInUp{
+	0%{
+		opacity: 0;
+		transform: translateY(-100px);
+	}
+	
+	80%{
+		transform: translateY(10px);
+	}
+
+	100%{
+		opacity: 1;
+		transform: translate(0);
+	}
+}
+
+@keyframes moveInDown{
+	0%{
+		opacity: 0;
+		transform: translateY(100px);
+	}
+	
+	80%{
+		transform: translateY(-10px);
+	}
+
+	100%{
+		opacity: 1;
+		transform: translate(0);
+	}
+}
+
+@keyframes moveInLeft{
+	0%{
+		opacity: 0;
+		transform: translateX(-100px);
+	}
+
+	80%{
+		transform: translateX(10px);
+	}
+
+	100%{
+		opacity: 1;
+		transform: translate(0);
+	}
+}
+
+@keyframes moveInRight{
+	0%{
+		opacity: 0;
+		transform: translateX(500px);
+	}
+
+	80%{
+		transform: translateX(-10px);
+	}
+
+	100%{
+		opacity: 1;
+		transform: translate(0);
+	}
+}
+
+
 /*////responsive////*/
 @media only screen and (min-width: 1198px){
 	.font-div{
